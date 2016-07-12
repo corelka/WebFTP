@@ -1,0 +1,36 @@
+﻿
+
+<!--This static page is not used in application but it is ready for implementation of solution with static page instead of ASP.NET MVC-->
+<!DOCTYPE html>
+<html ng-app="WebFTP">
+<head>
+    <meta charset="utf-8" />
+    <title>WebFTP</title>
+    <link href="~/stylesheet/style.css" rel="stylesheet">
+</head>
+<body ng-controller="Controller">
+    <div class="container">
+        <table>
+            <tr class="headers">
+                <th>Less 10Mb</th>
+                <th>10Mb-50Mb</th>
+                <th>50Mb-100Mb</th>
+                <th>More 100Mb</th>
+            </tr>
+            <tr>
+                <td>{{model.Less10}}</td>
+                <td>{{model.Less50}}</td>
+                <td>{{model.Less100}}</td>
+                <td>{{model.More100}}</td>
+            </tr>
+        </table>
+        <div class="curr_path"><span>Current path: </span> {{model.currentPath}} </div>
+        <div id="folders" class="folders">
+            <div ng-repeat="folder in model.folders"><a ng-click="getData(model.currentPath, folder)" href="">{{folder}}</a><br></div>
+            <div ng-repeat="file in model.files"><a ng-href="/api/WebFTP/Download?path={{model.currentPath}}&fileName={{file}}">{{file}}</a><br></div>
+        </div>
+        <script src="~/lib/angular/angular.min.js"></script>
+        <script src="~/js/angular_app.js"></script>
+    </div>
+</body>
+</html>

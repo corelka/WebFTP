@@ -7,6 +7,7 @@ using Microsoft.AspNet.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNet.Http;
 
 namespace WebFTP
 {
@@ -50,6 +51,8 @@ namespace WebFTP
             app.UseApplicationInsightsRequestTelemetry();
 
             app.UseApplicationInsightsExceptionTelemetry();
+
+            //app.UseDefaultFiles();
 
             app.UseStaticFiles();
 

@@ -1,0 +1,45 @@
+body{
+  width: 100%;
+  font-family: sans-serif;
+}
+.container{
+  width:95%;
+  margin: 0 auto;
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+tr{
+  margin: 0;
+  text-align: center;
+  color: black;
+}
+th{
+  background-color: #bdbdbd;
+  color:white;
+  font-weight: bold;
+}
+th,td{
+  border: 2px solid #bdbdbd;
+  padding: 1% 5%;
+}
+.curr_path{
+  padding-top: 5%;
+}
+.curr_path span{
+  font-weight: bold;
+}
+.folders{
+  margin-top: 2%;
+  padding-bottom: 60px;
+}
+.folders div{
+  padding: 5px 10px;
+}
+.folders a{
+    color: #4fc3f7;
+}
+.folders a:hover{
+  text-decoration: none;
+}

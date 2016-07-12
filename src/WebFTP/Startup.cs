@@ -52,7 +52,7 @@ namespace WebFTP
 
             app.UseApplicationInsightsExceptionTelemetry();
 
-            //app.UseDefaultFiles();
+            app.UseDefaultFiles();
 
             app.UseStaticFiles();
 

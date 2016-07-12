@@ -2,6 +2,7 @@
 Simple application for browsing files and directories of server
 
 Globally there are 2 different solutions:
+
 1) First one is simple static page with AngularJS application which will call WebAPI of server.
 Entering address in browser will generate get-request and server will send a simple static page.
 Then Angular application needs to send a request for collecting initial data about current folder of application.
